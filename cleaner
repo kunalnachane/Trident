@@ -1,0 +1,46 @@
+#!/data/data/com.termux/files/usr/bin/bash
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/cache  2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/tbslog  2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem 2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/cacheFile.txt 2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/login-identifier.txt 2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json 2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs 2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo 2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo 2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora 2> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir 2> /dev/null
+ rm -r /storage/emulated/0/tencent 2> /dev/null
+  rm -r /storage/emulated/0/Tencent 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/cache 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem 	   2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog  	   2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt	 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/Engine 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist 2> /dev/null
+  rm -r /storage/emulated/0/Android/data/com.pubg.krmobile/cache 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/app_appcache 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/app_bugly 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/cache 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/code_cache 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/app_crashrecord 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/databases/google_app_measurement_local.db-journal 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/databases/pri_tencent_analysis.db-journal 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/databases/tencent_analysis.db-journal 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/databases/xg_message.db-journal 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/databases/google_app_measurement_local.db 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/databases/pri_tencent_analysis.db 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/databases/__hs__db_issues-journal 2> /dev/null
+  rm -r /data/data/com.pubg.krmobile/databases/__hs__db_key_values-journal 2> /dev/null

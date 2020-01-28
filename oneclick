@@ -1,0 +1,35 @@
+#!/data/data/com.termux/files/usr/bin/bash
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/*
+
+if [ ! -d "/storage/emulated/0/tencentbackup" ] 
+then
+mkdir /storage/emulated/0/tencentbackup
+fi
+
+cp -R /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/* /storage/emulated/0/tencentbackup
+echo "Now good to go"
+./mod
+
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+
+sleep 6
+chmod 664 /data/data/com.pubg.krmobile/lib/libtersafe.so
+chmod 664 /data/data/com.pubg.krmobile/lib/libUE4.so
+chmod 664 /data/data/com.pubg.krmobile/lib/libtprt.so
+sleep 19
+PACKAGE='com.pubg.krmobile'
+while [ $(pidof $PACKAGE) ]
+do
+echo "empty loop"
+sleep 10
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+sleep 1
+done
+chmod 755 /data/data/com.pubg.krmobile/lib/*
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/*
+cp -R /storage/emulated/0/tencentbackup/* /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/*
+./fix
+echo "client restored"

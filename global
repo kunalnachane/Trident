@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+if [ -d "/data/data/com.termux/files/home/Trident/pytransform/mods/Paks" ] 
+then
+
+if [ ! -d "/storage/emulated/0/Android/Trident" ] 
+then
+mkdir /storage/emulated/0/Android/Trident
+fi
+
+cp /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* /storage/emulated/0/Android/Trident
+cp -R /data/data/com.termux/files/home/Trident/pytransform/mods/Paks/* /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
+sleep 6
+chmod 664 /data/data/com.tencent.ig/lib/libtersafe.so
+chmod 664 /data/data/com.tencent.ig/lib/libUE4.so
+chmod 664 /data/data/com.tencent.ig/lib/libtprt.so
+sleep 20
+PACKAGE='com.tencent.ig'
+while [ $(pidof $PACKAGE) ]
+do
+echo "empty loop"
+sleep 10
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+sleep 1
+done
+chmod 755 /data/data/com.tencent.ig/lib/libtersafe.so
+chmod 755 /data/data/com.tencent.ig/lib/libUE4.so
+chmod 755 /data/data/com.tencent.ig/lib/libtprt.so
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*
+mv /storage/emulated/0/Android/Trident/* /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+echo "${YELLOW}  Client Restored"
+else
+ echo "${YELLOW} Global Support Is Not Available"
+fi
